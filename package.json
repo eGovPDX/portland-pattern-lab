@@ -30,6 +30,7 @@
     "@pattern-lab/uikit-workshop": "^1.0.1"
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^1.2.0",
     "autoprefixer": "^9.6.0",
     "babel-loader": "^8.0.6",
     "browser-sync": "^2.26.7",
