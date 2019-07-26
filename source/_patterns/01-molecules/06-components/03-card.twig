@@ -1,0 +1,9 @@
+{% set image %}
+    {% include '@molecules/03-media/00-figure-with-caption.twig' %}
+{% endset %}
+{% include '@molecules/06-components/_card.twig' with {
+    'title': title,
+    'heading_level': heading_level,
+    'body': body,
+    'image': image
+} only %}

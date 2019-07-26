@@ -1,0 +1,20 @@
+{% set title %}
+    <a href="#">A service node</a>
+{% endset %}
+{% set content %}
+    {% include "@atoms/02-text/lead-paragraph.twig" %}
+{% endset %}
+{% set image %}
+    {% include "@atoms/04-images/03-square.twig" %}
+{% endset %}
+<ul>
+{% for i in 0..10 %}
+    <li>
+        {% include "@organisms/01-node/01-node-search-result.twig" with {
+            "title": "A service node",
+            "content": content,
+            "image": image
+        } %}
+    </li>
+{% endfor %}
+</ul>
