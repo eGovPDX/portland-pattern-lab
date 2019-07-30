@@ -2,15 +2,15 @@
     <a href="#">A news node</a>
 {% endset %}
 {% set content %}
-    {% include "@atoms/02-text/lead-paragraph.twig" %}
+    {% include "@elements/02-text/lead-paragraph.twig" %}
 {% endset %}
 {% set image %}
-    {% include "@atoms/04-images/03-square.twig" %}
+    {% include "@elements/04-images/03-square.twig" %}
 {% endset %}
 <ul>
 {% for i in 0..10 %}
     <li>
-        {% include "@organisms/01-node/01-node-search-result.twig" with {
+        {% include "@components/01-node/01-node-search-result.twig" with {
             "title": title,
             "content": content,
             "image": image
