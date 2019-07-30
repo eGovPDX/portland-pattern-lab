@@ -142,6 +142,13 @@
           ]
         },
         {
+          "id": "base",
+          "recursive": true,
+          "paths": [
+            "source/_patterns/base"
+          ]
+        },
+        {
           "id": "atoms",
           "recursive": true,
           "paths": [
@@ -166,14 +173,7 @@
           "id": "templates",
           "recursive": true,
           "paths": [
-            "source/_patterns/03-templates"
-          ]
-        },
-        {
-          "id": "pages",
-          "recursive": true,
-          "paths": [
-            "source/_patterns/04-pages"
+            "source/_patterns/04-templates"
           ]
         },
         {
