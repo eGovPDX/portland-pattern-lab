@@ -11,7 +11,7 @@ module.exports = (env, argv) => ({
   mode: process.env.NODE_ENV,
   output: {
     path: path.resolve(__dirname),
-    filename: 'public/js/[name].bundle.js'
+    filename: 'source/js/[name].bundle.js'
   },
   watchOptions: {
     ignored: [
@@ -22,8 +22,8 @@ module.exports = (env, argv) => ({
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'public/css/style.bundle.css',
-      chunkFilename: 'public/css/[id].bundle.css',
+      filename: 'source/css/style.bundle.css',
+      chunkFilename: 'source/css/[id].bundle.css',
     }),
     new BrowserSyncPlugin({
       host: 'localhost',
