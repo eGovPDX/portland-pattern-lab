@@ -1,0 +1,60 @@
+{% set top_left_classes = top_left_classes|default([
+  "w-full",
+  "px-2"
+  ])
+%}
+{% set top_center_classes = top_center_classes|default([
+  "w-full",
+  "px-2"
+  ])
+%}
+
+<div class="flex flex-col md:flex-row">
+  <div class="flex flex-col md:w-3/4">
+    <section class="{{ top_left_classes|join(' ') }}">
+      {% block top_left %}
+          {% include "@utilities/_placeholder.twig" with {
+            "placeholder" : {
+              "text": "top first"
+            }
+          } only %}
+      {% endblock %}
+    </section>
+    <section class="{{ top_center_classes|join(' ') }} md:hidden">
+      {% block top_right %}
+          {% include "@utilities/_placeholder.twig" with {
+            "placeholder" : {
+              "text": "top second"
+            }
+          } only %}
+      {% endblock %}
+    </section>
+    <section class="w-full px-2 md:hidden">
+      {% block center %}
+          {% include "@utilities/_placeholder.twig" with {
+            "placeholder" : {
+              "text": "top third"
+            }
+          } only %}
+      {% endblock %}
+    </section>
+    <section class="w-full px-2">
+      {% block bottom %}
+        {% include "@utilities/_placeholder.twig" with {
+          "placeholder" : {
+            "text": "top fourth"
+          }
+        } only %}
+      {% endblock %}
+    </section>
+  </div>
+  <aside class="hidden flex-col md:flex md:w-1/4 px-2">
+    {% block sidebar %}
+      {% include "@utilities/_placeholder.twig" with {
+        "placeholder" : {
+          "text": "sidebar"
+        }
+      } only %}
+    {% endblock %}
+  </aside>
+</div>
