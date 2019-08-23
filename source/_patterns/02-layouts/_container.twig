@@ -1,9 +1,0 @@
-{% set container_classes = container_classes|default([
-  "container",
-  "mx-auto",
-  "px-2"
-]) %}
-<div class="{{ container_classes|join(' ') }}">
-  {% block layout %}
-  {% endblock %}
-</div>
