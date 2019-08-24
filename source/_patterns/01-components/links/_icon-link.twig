@@ -1,4 +1,5 @@
-<a href="{{ url }}">
+{% set wrapper_classes = wrapper_classes|default([]) %}
+<a href="{{ url }}" class="{{ wrapper_classes|join(' ') }}">
   <div class="flex items-center mb-4">
     <span class="mr-2">{{ icon }}</span>
     <span>{{ text }}</span>
