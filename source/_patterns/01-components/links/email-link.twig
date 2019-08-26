@@ -6,8 +6,10 @@
     ]
   } only %}
 {% endset %}
+{% set email = email|default("name@email.com") %}
+{% set url = "mailto:" ~ email %}
 {% include "@components/links/_icon-link.twig" with {
   "icon": icon,
-  "url": "#",
-  "text": "name@portland.gov"
+  "url": url,
+  "text": email
 } only %}
