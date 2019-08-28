@@ -1,4 +1,13 @@
 @tailwind base;
+
+ul {
+   @apply list-disc;
+ }
+
+ol {
+   @apply list-decimal;
+ }
+
 @tailwind components;
 
 //  Remove following after tailwind 1.1: https://github.com/tailwindcss/tailwindcss/pull/964
