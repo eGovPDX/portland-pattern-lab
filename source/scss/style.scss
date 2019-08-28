@@ -1,12 +1,12 @@
 @tailwind base;
 
 ul {
-   @apply list-disc;
- }
+   @apply list-disc px-4;
+}
 
 ol {
-   @apply list-decimal;
- }
+   @apply list-decimal px-4;
+}
 
 @tailwind components;
 
