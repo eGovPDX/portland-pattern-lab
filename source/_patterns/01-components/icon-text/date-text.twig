@@ -1,0 +1,13 @@
+{% set icon %}
+  {% include "@elements/icons/calendar.twig" with {
+    "classes": [
+      "h-6",
+      "w-6"
+    ]
+  } only %}
+{% endset %}
+{% set text = "Some text" %}
+{% include "@components/icon-text/_icon-text.twig" with {
+  "text": text,
+  "icon": icon
+} only %}
