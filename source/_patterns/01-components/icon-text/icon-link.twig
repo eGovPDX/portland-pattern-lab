@@ -1,0 +1,16 @@
+{% set icon %}
+  {% include "@elements/icons/email.twig" with {
+    "classes": [
+      "h-6",
+      "w-6"
+    ]
+  } only %}
+{% endset %}
+{% set element = "a" %}
+{% set url = "#" %}
+{% set text = "Some link text" %}
+{% include "@components/icon-text/_icon-text.twig" with {
+  "text": text,
+  "icon": icon,
+  "element": element
+} %}

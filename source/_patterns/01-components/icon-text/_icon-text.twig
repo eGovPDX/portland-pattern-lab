@@ -1,0 +1,8 @@
+{% set wrapper = {
+    element: element|default("div"),
+    link: "href=" ~ url,
+} %}
+<{{ wrapper.element }} {{ wrapper.link }} class="flex items-center mb-4">
+  <span class="mr-2">{{ icon }}</span>
+  <span>{{ text }}</span>
+</{{ wrapper.element }}>
