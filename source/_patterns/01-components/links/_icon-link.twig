@@ -2,7 +2,7 @@
 {% set class = 'class=' ~ wrapper_classes|join(' ') %}
 <a href="{{ url }}" {{ wrapper_class_markup ? class }}>
   <div class="flex items-center mb-4">
-    <span class="mr-2">{{ icon }}</span>
+    <span class="flex items-center mr-2">{{ icon }}</span>
     <span>{{ text }}</span>
   </div>
 </a>
