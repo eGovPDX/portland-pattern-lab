@@ -15,4 +15,4 @@
   'fas'
 ]) %}
 
-<i{{item.attributes.addClass(item_classes).addClass(icon_class)}}></i>
+<i class="{{ item_classes|merge([icon_class])|join(' ') }}"></i>
