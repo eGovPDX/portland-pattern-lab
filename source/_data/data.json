@@ -89,5 +89,9 @@
     { },
     { },
     { }
+  ],
+  "colors" : [
+    { "name": "purple-dark", "value": "#21183c"},
+    { "name": "yellow", "value": "#ffed4a"}
   ]
 }
