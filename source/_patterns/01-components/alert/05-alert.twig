@@ -1,0 +1,14 @@
+{% include '@components/alert/_alert.twig' with {
+  'message': "This is a danger alert",
+  'type': "danger"
+} only %}
+
+{% include '@components/alert/_alert.twig' with {
+  'message': "This is a warning alert",
+  'type': "warning"
+} only %}
+
+{% include '@components/alert/_alert.twig' with {
+  'message': "This is a info alert",
+  'type': "info"
+} only %}
