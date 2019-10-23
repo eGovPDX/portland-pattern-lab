@@ -28,7 +28,9 @@
     "@pattern-lab/core": "^3.0.1",
     "@pattern-lab/engine-twig-php": "^3.0.1",
     "@pattern-lab/starterkit-twig-demo": "^4.1.1",
-    "@pattern-lab/uikit-workshop": "^1.0.1"
+    "@pattern-lab/uikit-workshop": "^1.0.1",
+    "bootstrap": "^4.3",
+    "bootstrap4-chosen": "^1.0.0-alpha.1"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^1.2.0",
