@@ -1,0 +1,142 @@
+/**
+ * @file
+ * Visual styles for Tweme's form components.
+ */
+
+.form--inline {
+  @extend .form-inline;
+}
+
+select.form-select {
+  @extend .form-control;
+  margin-top: .25rem;
+  border-radius: .125rem;
+}
+
+.views-exposed-form form {
+  margin-bottom: 2rem;
+}
+
+.views-exposed-form .form-actions {
+  @extend .align-self-end;
+}
+
+form .description,
+form .counter {
+  display: block;
+  margin-bottom: $spacer;
+  font-size: $font-size-sm;
+}
+
+form label {
+  @extend .h5;
+}
+
+.entity-content-form-footer {
+  border: $border-width solid $gray-300;
+  padding: ($spacer * 1.5);
+  margin-bottom: ($spacer * 2) !important;
+  background-color: $gray-100;
+}
+
+/* fix for superfluous label colons in entity embed alignment form, bad alignment and mismatched label bolding */
+.form-item-attributes-data-align label:after, .form-item-attributes-data-align .label:after {
+  content: none !important;
+}
+.form-item-attributes-data-align label {
+  margin-right: 10px;
+}
+.form-item-attributes-data-caption label {
+  font-weight: bold;
+}
+
+/* put a little padding in styled CKEditor body */
+.cke_editable {
+  margin: 10px;
+}
+
+// Form control
+.form--inline .form-item {
+  margin-right: .5em;
+}
+.form-control {
+  border-radius: .125rem;
+}
+
+.invalid-feedback {
+  display: inherit;
+}
+
+// entity embed dialog
+
+.entity-embed-dialog-step--embed .form-element-container {
+  width: 150px;
+  float: left;
+  display: block;
+}
+.entity-embed-dialog-step--embed .container-inline div {
+  display: block;
+}
+
+// exposed filter forms
+
+div.date-links {
+  flex-basis: 100%;
+  margin-bottom: 30px;
+}
+span.prev-link {
+  margin-right: 30px;
+}
+span.next-link .fas {
+  margin: 0 0 0 .5rem;
+}
+
+/* admin content/media view tables */
+.view-admin-group-content .form-check,
+.view-my-content .form-check,
+.view-my-media .form-check,
+.views-table .form-check {
+  padding-left: 0;
+  margin-top: 0;
+}
+.view-admin-group-content .dropbutton-multiple,
+.view-my-content .dropbutton-multiple,
+.view-my-media .dropbutton-multiple,
+.views-table .dropbutton-multiple {
+  margin-right: 2em !important;
+  padding-right: 3em !important;
+}
+.view-admin-group-content table .form-item,
+.view-my-content table .form-item,
+.view-my-media table .form-item
+.views-table table .form-item {
+  margin-top: 0;
+}
+
+// Chosen form overrides
+.chosen-container-single {
+  .chosen-single {
+    padding-left: $spacer * .75;
+  }
+}
+
+.chosen-container-multi {
+  .chosen-choices{
+    padding: ($spacer * .375) ($spacer * .75);
+    li.search-choice {
+      padding: ($spacer * .375) ($spacer * 1.5) ($spacer * .375) ($spacer * .75);
+      display: flex;
+      align-items: center;
+      .search-choice-close {
+        top: $spacer * .5;
+        right: $spacer * .25;
+      }
+    }
+  }
+}
+
+/* Calendar Item content type node form; compact class set in the form display container element. */
+div.compact > div {
+  width: 49.5%;
+  display: inline-block;
+}

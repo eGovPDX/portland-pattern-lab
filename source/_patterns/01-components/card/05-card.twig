@@ -1,0 +1,7 @@
+{% set text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil." %}
+{% set title = "Card Title" %}
+
+{% include '@components/card/_card.twig' with {
+    'text': text,
+    'title': title
+} only %}

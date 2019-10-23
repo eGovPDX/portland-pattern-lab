@@ -9,6 +9,7 @@
     "pl:build": "patternlab build --config ./patternlab-config.json",
     "webpack:dev": "webpack --mode development --watch",
     "webpack:build": "webpack --mode production --no-progress",
+    "start": "npm run pl:build && run-p webpack:dev pl:dev --print-label",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,7 +28,9 @@
     "@pattern-lab/core": "^3.0.1",
     "@pattern-lab/engine-twig-php": "^3.0.1",
     "@pattern-lab/starterkit-twig-demo": "^4.1.1",
-    "@pattern-lab/uikit-workshop": "^1.0.1"
+    "@pattern-lab/uikit-workshop": "^1.0.1",
+    "bootstrap": "^4.3",
+    "bootstrap4-chosen": "^1.0.0-alpha.1"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^1.2.0",
@@ -42,6 +45,7 @@
     "import-glob-loader": "^1.1.0",
     "mini-css-extract-plugin": "^0.7.0",
     "node-sass": "^4.12.0",
+    "npm-run-all": "^4.1.5",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^7.1.0",
     "tailwindcss": "^1.0.5",

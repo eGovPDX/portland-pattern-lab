@@ -1,0 +1,17 @@
+.ui-dialog {
+  .ui-dialog-titlebar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .ui-dialog-title {
+      flex-grow: 1;
+    }
+    .ui-dialog-titlebar-close {
+      position: static;
+      width: unset;
+      height: unset;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
